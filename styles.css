@@ -162,7 +162,7 @@ nav {
   height: 100%;
   min-height: 380px;
   max-width:365px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .card:hover {
@@ -285,7 +285,9 @@ nav {
   margin-bottom: 10px;
   color: #5D4037;
 }
-
+.padding{
+  padding-top: 50px;
+}
 /* Footer */
 footer {
   background-color:#2E4631;
