@@ -344,7 +344,7 @@ footer p {
     visibility: visible;
   }
 
-  /* Hamburger Icon Transformation (to 'X') Instantly */
+  /* Hamburger Icon */
   #menu-toggle:checked + .hamburger .bar:nth-child(2) {
     opacity: 0;
   }
