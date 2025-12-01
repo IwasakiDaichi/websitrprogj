@@ -50,6 +50,7 @@ img {
 .grid {
   display: grid;
   gap: 20px;
+  justify-items: left;
 }
 
 .grid-3 {
