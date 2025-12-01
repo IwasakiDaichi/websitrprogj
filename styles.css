@@ -332,3 +332,82 @@ footer p {
     /* Simple hide for now, could add hamburger later */
   }
 }
+/* --- Hamburger Icon Base Styles (Using Label) --- */
+.hamburger {
+    display: none; /* Hide on desktop by default */
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #5D4037; 
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hide the unused checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* --- Mobile Navigation Overrides (Below 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Show the hamburger icon label */
+    .hamburger {
+        display: block; 
+    }
+
+    /* 2. Style and HIDE the navigation links off-screen */
+    .nav-links {
+        display: block; 
+        position: absolute;
+        top: 65px; 
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+
+        /* Key to hide: move off-screen and make invisible */
+        transform: translateY(-100%); 
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0; 
+        border-bottom: 1px solid #eee;
+    }
+
+    /* 3. PURE CSS TOGGLE LOGIC: 
+       When the hidden checkbox is checked, select the sibling .nav-links element 
+       and show it. */
+    #menu-toggle:checked ~ .nav-links {
+        transform: translateY(0); /* Slide down into view */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 4. Hamburger icon animation (turns into an 'X') */
+    #menu-toggle:checked + .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked + .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked + .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* Ensure hero section text scales down */
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
