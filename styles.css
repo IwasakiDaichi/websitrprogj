@@ -162,6 +162,7 @@ nav {
   height: 100%;
   min-height: 380px;
   max-width:365px;
+  margin: 0 auto;
 }
 
 .card:hover {
