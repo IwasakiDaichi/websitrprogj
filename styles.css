@@ -345,7 +345,7 @@ footer p {
     height: 3px;
     margin: 5px auto;
     background-color: #5D4037; 
-    transition: all 0.3s ease-in-out;
+    
 }
 
 
@@ -377,7 +377,7 @@ footer p {
         transform: translateY(-100%); 
         opacity: 0;
         visibility: hidden;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        
     }
     
     .nav-links li {
