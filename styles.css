@@ -53,12 +53,13 @@ img {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .grid-team {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
+  
 }
 
 .flex {
@@ -116,7 +117,7 @@ nav {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(46, 70, 49, 0.8), rgba(46, 70, 49, 0.6)), url('images/hero-bg.jpg');
-  /* Fallback or placeholder */
+
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
@@ -159,6 +160,8 @@ nav {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   height: 100%;
+  min-height: 380px;
+  max-width: 370px;
 }
 
 .card:hover {
@@ -173,7 +176,6 @@ nav {
 
 .card-content {
   padding: 20px;
-  flex: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -201,7 +203,7 @@ nav {
 /* Team Section */
 .team-member {
   text-align: center;
-  background: FFFFFF;
+  background: #FFFFFF;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
