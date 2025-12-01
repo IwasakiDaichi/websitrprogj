@@ -321,7 +321,7 @@ footer p {
   opacity: 0.8;
 }
 
-/* Responsive */
+/* Responsive for mobile*/
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -329,12 +329,12 @@ footer p {
 
   .nav-links {
     display: none;
-    /* Simple hide for now, could add hamburger later */
+    
   }
 }
-/* --- Hamburger Icon Base Styles (Using Label) --- */
+/*hamburger menu*/
 .hamburger {
-    display: none; /* Hide on desktop by default */
+    display: none;
     cursor: pointer;
     padding: 5px;
 }
@@ -348,20 +348,20 @@ footer p {
     transition: all 0.3s ease-in-out;
 }
 
-/* Hide the unused checkbox */
+
 .menu-checkbox {
     display: none;
 }
 
-/* --- Mobile Navigation Overrides (Below 768px) --- */
+
 @media (max-width: 768px) {
     
-    /* 1. Show the hamburger icon label */
+    
     .hamburger {
         display: block; 
     }
 
-    /* 2. Style and HIDE the navigation links off-screen */
+   
     .nav-links {
         display: block; 
         position: absolute;
@@ -373,7 +373,7 @@ footer p {
         background-color: #FFFFFF;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
 
-        /* Key to hide: move off-screen and make invisible */
+       
         transform: translateY(-100%); 
         opacity: 0;
         visibility: hidden;
@@ -386,16 +386,14 @@ footer p {
         border-bottom: 1px solid #eee;
     }
 
-    /* 3. PURE CSS TOGGLE LOGIC: 
-       When the hidden checkbox is checked, select the sibling .nav-links element 
-       and show it. */
+   
     #menu-toggle:checked ~ .nav-links {
-        transform: translateY(0); /* Slide down into view */
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
 
-    /* 4. Hamburger icon animation (turns into an 'X') */
+    
     #menu-toggle:checked + .hamburger .bar:nth-child(2) {
         opacity: 0;
     }
@@ -406,7 +404,7 @@ footer p {
         transform: translateY(-8px) rotate(-45deg);
     }
     
-    /* Ensure hero section text scales down */
+  
     .hero h1 {
         font-size: 2rem;
     }
