@@ -40,7 +40,7 @@ img {
   display: block;
 }
 
-/* Layout Utilities */
+/* para sa Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -80,7 +80,7 @@ img {
   padding: 60px 0;
 }
 
-/* Header & Navigation */
+/* the Header & Navigation */
 header {
   background-color:  #FFFFFF;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -117,7 +117,7 @@ nav {
   color:  #2E4631;
 }
 
-/* Hero Section */
+/* yung Hero Section */
 .hero {
   background: linear-gradient(rgba(46, 70, 49, 0.8), rgba(46, 70, 49, 0.6)), url('images/hero-bg.jpg');
 
@@ -155,7 +155,7 @@ nav {
   background-color:  #5D4037;
 }
 
-/* Featured Dishes / Cards */
+/* para sa featured Dishes / Cards */
 .card {
   background: #FFFFFF;
   border-radius: 12px;
@@ -221,7 +221,7 @@ nav {
   display: block; 
 }
 
-/* Team Section */
+/* para sa Team Section */
 .team-member {
   text-align: center;
   background: #FFFFFF;
@@ -258,7 +258,7 @@ nav {
   color: #666;
 }
 
-/* Contact Form */
+/* para sa Form */
 .contact-form {
   background: #FFFFFF;
   padding: 40px;
