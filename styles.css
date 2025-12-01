@@ -167,6 +167,23 @@ nav {
   max-width:365px;
   
 }
+.card-stretch{
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-stretch:hover {
+  transform: translateY(-5px);
+}
 
 .card:hover {
   transform: translateY(-5px);
