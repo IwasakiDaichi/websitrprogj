@@ -161,7 +161,7 @@ nav {
   transition: transform 0.3s ease;
   height: 100%;
   min-height: 380px;
-  max-width: 300x;
+  max-width:365px;
 }
 
 .card:hover {
