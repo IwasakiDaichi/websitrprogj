@@ -50,11 +50,12 @@ img {
 .grid {
   display: grid;
   gap: 20px;
-  justify-items: start;
+  
 }
 
 .grid-3 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: start;
 }
 
 .grid-team {
